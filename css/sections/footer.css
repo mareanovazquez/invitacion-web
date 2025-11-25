@@ -1,0 +1,167 @@
+/* ============================================
+   FOOTER SECTION
+   Footer minimalista
+   ============================================ */
+
+.footer {
+    padding: var(--space-12) 0;
+    background-color: var(--color-text-secondary);
+    text-align: center;
+}
+
+/* Texto principal */
+.footer__text {
+    font-family: var(--font-display);
+    font-size: var(--font-size-lg);
+    font-weight: var(--font-weight-medium);
+    font-style: italic;
+    color: var(--color-text-inverse);
+    margin-bottom: var(--space-3);
+    opacity: 0.9;
+}
+
+/* Copyright */
+.footer__copyright {
+    font-family: var(--font-body);
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-regular);
+    color: var(--color-text-inverse);
+    opacity: 0.7;
+    letter-spacing: var(--letter-spacing-wide);
+}
+
+/* Links en el footer (opcional) */
+.footer__link {
+    color: var(--color-text-inverse);
+    text-decoration: underline;
+    transition: opacity var(--transition-base);
+}
+
+.footer__link:hover {
+    opacity: 1;
+}
+
+/* Separator opcional */
+.footer__separator {
+    width: 60px;
+    height: 2px;
+    background-color: var(--color-primary-light);
+    margin: var(--space-4) auto;
+    border-radius: var(--radius-full);
+    opacity: 0.5;
+}
+
+
+/* ==================
+   VARIANTE: Footer con redes sociales
+   ================== */
+
+.footer__social {
+    display: flex;
+    justify-content: center;
+    gap: var(--space-4);
+    margin-top: var(--space-6);
+}
+
+.footer__social-link {
+    font-size: var(--font-size-2xl);
+    color: var(--color-text-inverse);
+    opacity: 0.7;
+    transition: all var(--transition-base);
+}
+
+.footer__social-link:hover {
+    opacity: 1;
+    transform: translateY(-3px);
+}
+
+
+/* ==================
+   VARIANTE: Footer expandido
+   ================== */
+
+.footer--expanded {
+    padding: var(--space-16) 0 var(--space-8);
+}
+
+.footer__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-8);
+    max-width: var(--max-width-lg);
+    margin: 0 auto var(--space-10);
+    text-align: left;
+}
+
+.footer__column-title {
+    font-family: var(--font-display);
+    font-size: var(--font-size-base);
+    font-weight: var(--font-weight-bold);
+    color: var(--color-text-inverse);
+    margin-bottom: var(--space-3);
+}
+
+.footer__column-text {
+    font-family: var(--font-body);
+    font-size: var(--font-size-sm);
+    color: var(--color-text-inverse);
+    opacity: 0.7;
+    line-height: var(--line-height-relaxed);
+}
+
+
+/* ==================
+   RESPONSIVE
+   ================== */
+
+/* Tablet */
+@media (max-width: 1024px) {
+    .footer {
+        padding: var(--space-10) 0;
+    }
+
+    .footer__text {
+        font-size: var(--font-size-base);
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .footer {
+        padding: var(--space-8) 0;
+    }
+
+    .footer__text {
+        font-size: var(--font-size-base);
+        margin-bottom: var(--space-2);
+    }
+
+    .footer__copyright {
+        font-size: var(--font-size-xs);
+    }
+
+    .footer__grid {
+        grid-template-columns: 1fr;
+        gap: var(--space-6);
+        text-align: center;
+    }
+
+    .footer__social {
+        margin-top: var(--space-4);
+    }
+
+    .footer__social-link {
+        font-size: var(--font-size-xl);
+    }
+}
+
+/* Mobile pequeño */
+@media (max-width: 480px) {
+    .footer {
+        padding: var(--space-6) 0;
+    }
+
+    .footer__text {
+        font-size: var(--font-size-sm);
+    }
+}

@@ -1,0 +1,28 @@
+/* ============================================
+   MAIN STYLESHEET - Importa todo en orden
+   ============================================ */
+
+/* 1. Variables primero (base del sistema) */
+@import 'variables.css';
+
+/* 2. Reset y base */
+@import 'reset.css';
+@import 'base.css';
+
+/* 3. Components */
+@import 'components/buttons.css';
+@import 'components/cards.css';
+@import 'components/forms.css';
+
+/* 4. Sections (específicas del proyecto) */
+@import 'sections/hero.css';
+@import 'sections/countdown.css';
+@import 'sections/welcome.css';
+@import 'sections/gallery.css';
+@import 'sections/lightbox.css';
+@import 'sections/social.css';
+@import 'sections/event-details.css';
+@import 'sections/rsvp.css';
+@import 'sections/gifts.css';
+@import 'sections/photo-teaser.css';
+@import 'sections/footer.css';

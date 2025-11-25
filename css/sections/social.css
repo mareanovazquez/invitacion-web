@@ -1,0 +1,198 @@
+/* ============================================
+   SOCIAL SECTION
+   Integraciones de redes sociales
+   ============================================ */
+
+.social {
+    padding: var(--space-20) 0;
+    background-color: var(--color-bg-secondary);
+}
+
+/* Título de la sección */
+.social__title {
+    font-family: var(--font-display);
+    font-size: var(--font-size-4xl);
+    font-weight: var(--font-weight-bold);
+    color: var(--color-text-primary);
+    text-align: center;
+    margin-bottom: var(--space-12);
+    letter-spacing: var(--letter-spacing-tight);
+}
+
+/* Grid de cards */
+.social__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-8);
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Card individual */
+.social__card {
+    background-color: var(--color-bg-elevated);
+    border-radius: var(--radius-xl);
+    padding: var(--space-10);
+    text-align: center;
+    box-shadow: var(--shadow-card);
+    transition: transform var(--transition-base), box-shadow var(--transition-base);
+    border: 1px solid var(--color-border-secondary);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-4);
+}
+
+.social__card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-elevated);
+    border-color: var(--color-accent);
+}
+
+/* Ícono del card */
+.social__icon {
+    font-size: var(--font-size-6xl);
+    line-height: 1;
+    margin-bottom: var(--space-2);
+}
+
+/* Título del card */
+.social__card-title {
+    font-family: var(--font-display);
+    font-size: var(--font-size-2xl);
+    font-weight: var(--font-weight-bold);
+    color: var(--color-text-primary);
+    line-height: var(--line-height-tight);
+    margin-bottom: var(--space-2);
+}
+
+/* Username o descripción */
+.social__username {
+    font-family: var(--font-body);
+    font-size: var(--font-size-base);
+    font-weight: var(--font-weight-regular);
+    color: var(--color-text-secondary);
+    line-height: var(--line-height-normal);
+    margin-bottom: var(--space-6);
+}
+
+/* Botón dentro del card */
+.social__card .btn {
+    margin-top: auto;
+    min-width: 150px;
+}
+
+
+/* ==================
+   VARIANTES: Colores específicos por red social
+   ================== */
+
+/* Instagram */
+.social__card--instagram:hover {
+    border-color: var(--color-secondary);
+}
+
+.social__card--instagram .social__icon {
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* Spotify */
+.social__card--spotify:hover {
+    border-color: var(--color-accent);
+}
+
+
+/* ==================
+   RESPONSIVE
+   ================== */
+
+/* Tablet grande */
+@media (max-width: 1024px) {
+    .social {
+        padding: var(--space-16) 0;
+    }
+
+    .social__title {
+        font-size: var(--font-size-3xl);
+        margin-bottom: var(--space-10);
+    }
+
+    .social__grid {
+        gap: var(--space-6);
+    }
+
+    .social__card {
+        padding: var(--space-8);
+    }
+
+    .social__icon {
+        font-size: var(--font-size-5xl);
+    }
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+    .social {
+        padding: var(--space-12) 0;
+    }
+
+    .social__title {
+        font-size: var(--font-size-2xl);
+        margin-bottom: var(--space-8);
+    }
+
+    .social__grid {
+        gap: var(--space-5);
+    }
+
+    .social__card-title {
+        font-size: var(--font-size-xl);
+    }
+
+    .social__icon {
+        font-size: var(--font-size-4xl);
+    }
+}
+
+/* Mobile */
+@media (max-width: 640px) {
+    .social__grid {
+        grid-template-columns: 1fr;
+        gap: var(--space-5);
+        max-width: 400px;
+    }
+
+    .social__card {
+        padding: var(--space-8);
+    }
+}
+
+/* Mobile pequeño */
+@media (max-width: 480px) {
+    .social {
+        padding: var(--space-10) 0;
+    }
+
+    .social__title {
+        font-size: var(--font-size-xl);
+    }
+
+    .social__card {
+        padding: var(--space-6);
+    }
+
+    .social__card-title {
+        font-size: var(--font-size-lg);
+    }
+
+    .social__icon {
+        font-size: var(--font-size-3xl);
+    }
+
+    .social__username {
+        font-size: var(--font-size-sm);
+    }
+}

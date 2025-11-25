@@ -1,0 +1,211 @@
+/* ============================================
+   VARIABLES CSS - DESIGN SYSTEM
+   Invitaciones Web Premium
+   ============================================ */
+
+:root {
+
+    /* ==================
+     TIPOGRAFÍA
+     ================== */
+
+    /* Font Families */
+    --font-display: 'Playfair Display', serif;
+    --font-body: 'Inter', sans-serif;
+
+    /* Font Weights */
+    --font-weight-light: 300;
+    --font-weight-regular: 400;
+    --font-weight-medium: 500;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
+    --font-weight-black: 900;
+
+    /* Font Sizes */
+    --font-size-xs: 0.75rem;
+    /* 12px */
+    --font-size-sm: 0.875rem;
+    /* 14px */
+    --font-size-base: 1rem;
+    /* 16px */
+    --font-size-lg: 1.125rem;
+    /* 18px */
+    --font-size-xl: 1.25rem;
+    /* 20px */
+    --font-size-2xl: 1.5rem;
+    /* 24px */
+    --font-size-3xl: 1.875rem;
+    /* 30px */
+    --font-size-4xl: 2.25rem;
+    /* 36px */
+    --font-size-5xl: 3rem;
+    /* 48px */
+    --font-size-6xl: 3.75rem;
+    /* 60px */
+    --font-size-7xl: 4.5rem;
+    /* 72px */
+
+    /* Line Heights */
+    --line-height-tight: 1.25;
+    --line-height-normal: 1.5;
+    --line-height-relaxed: 1.75;
+
+    /* Letter Spacing */
+    --letter-spacing-tight: -0.025em;
+    --letter-spacing-normal: 0;
+    --letter-spacing-wide: 0.025em;
+    --letter-spacing-wider: 0.05em;
+
+
+    /* ==================
+     COLORES - LIGHT THEME (default)
+     ================== */
+
+    /* PRIMARY */
+    --color-primary: #BADFDB;
+    --color-primary-light: #D4EDE9;
+    /* Más claro para fondos */
+    --color-primary-dark: #73B7B0;
+
+    /* SECONDARY */
+    /* Más saturado para hover/activo */
+    --color-secondary: #FFBDBD;
+    --color-secondary-light: #FFE0E0;
+    /* Más claro para fondos */
+    --color-secondary-dark: #F99B9B;
+    
+    /* ACCENT */
+    /* Más saturado para hover/activo */
+    --color-accent: #FFA4A4;
+    --color-accent-light: #FFC9C9;
+    /* Para hover suave */
+    --color-accent-dark: #F78686;
+    
+
+    /* Backgrounds - Light Theme */
+    --color-bg-primary: #FCF9EA;
+    --color-bg-secondary: #FAFAFA;
+    --color-bg-tertiary: #F5F5F5;
+    --color-bg-elevated: #FCFCF7;
+
+    /* Text Colors - Light Theme */
+    --color-text-primary: #262626;
+    --color-text-secondary: #0a2e36;
+    --color-text-tertiary: #57595B;
+    --color-text-muted: #C7C8CC;
+    --color-text-inverse: #FCFCF7;
+
+    /* Borders - Light Theme */
+    --color-border-primary: #E5E5E5;
+    --color-border-secondary: #F0F0F0;
+    --color-border-focus: #FCDC94;
+
+    /* Estados Funcionales */
+    --color-success: #659287;
+    --color-error: #9F5255;
+    --color-warning: #EDA35A;
+    --color-info: #6D94C5;
+
+    /* Overlays */
+    --color-overlay-light: rgba(255, 255, 255, 0.9);
+    --color-overlay-dark: rgba(10, 46, 54, 0.7);
+    /* Usando tu text-secondary como base */
+
+
+    /* ==================
+     BORDER RADIUS
+     ================== */
+
+    --radius-sm: 4px;
+    --radius-md: 8px;
+    --radius-lg: 16px;
+    --radius-xl: 24px;
+    --radius-2xl: 32px;
+    --radius-full: 9999px;
+
+
+    /* ==================
+     BOX SHADOWS
+     ================== */
+
+    --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+    --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.07);
+    --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.1);
+    --shadow-xl: 0 20px 25px rgba(0, 0, 0, 0.15);
+    --shadow-2xl: 0 25px 50px rgba(0, 0, 0, 0.2);
+    --shadow-card: 0 2px 8px rgba(0, 0, 0, 0.08);
+    --shadow-elevated: 0 8px 30px rgba(0, 0, 0, 0.12);
+    --shadow-inner: inset 0 2px 4px rgba(0, 0, 0, 0.06);
+
+
+    /* ==================
+     SPACING SYSTEM
+     ================== */
+
+    --space-0: 0;
+    --space-1: 4px;
+    --space-2: 8px;
+    --space-3: 12px;
+    --space-4: 16px;
+    --space-5: 20px;
+    --space-6: 24px;
+    --space-7: 28px;
+    --space-8: 32px;
+    --space-10: 40px;
+    --space-12: 48px;
+    --space-16: 64px;
+    --space-20: 80px;
+    --space-24: 96px;
+    --space-32: 128px;
+
+
+    /* ==================
+     TRANSITIONS
+     ================== */
+
+    --transition-fast: 150ms ease;
+    --transition-base: 250ms ease;
+    --transition-slow: 350ms ease;
+    --transition-slower: 500ms ease;
+
+    --ease-in: cubic-bezier(0.4, 0, 1, 1);
+    --ease-out: cubic-bezier(0, 0, 0.2, 1);
+    --ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
+
+
+    /* ==================
+     BREAKPOINTS
+     ================== */
+
+    --breakpoint-sm: 640px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 1024px;
+    --breakpoint-xl: 1280px;
+    --breakpoint-2xl: 1536px;
+
+
+    /* ==================
+     Z-INDEX SCALE
+     ================== */
+
+    --z-base: 1;
+    --z-dropdown: 100;
+    --z-sticky: 200;
+    --z-fixed: 300;
+    --z-modal-backdrop: 400;
+    --z-modal: 500;
+    --z-popover: 600;
+    --z-tooltip: 700;
+
+
+    /* ==================
+     MAX WIDTHS
+     ================== */
+
+    --max-width-sm: 640px;
+    --max-width-md: 768px;
+    --max-width-lg: 1024px;
+    --max-width-xl: 1280px;
+    --max-width-2xl: 1536px;
+    --max-width-content: 1200px;
+}

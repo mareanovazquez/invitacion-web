@@ -1,0 +1,207 @@
+/* ============================================
+   PHOTOS TEASER SECTION
+   Anticipo del álbum post-evento
+   ============================================ */
+
+.photos-teaser {
+    padding: var(--space-20) 0;
+    background: linear-gradient(135deg,
+            var(--color-primary-light) 0%,
+            var(--color-secondary-light) 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+/* Efecto decorativo opcional */
+.photos-teaser::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -10%;
+    width: 500px;
+    height: 500px;
+    background: radial-gradient(circle,
+            rgba(186, 223, 219, 0.3) 0%,
+            transparent 70%);
+    border-radius: var(--radius-full);
+    pointer-events: none;
+}
+
+.photos-teaser::after {
+    content: '';
+    position: absolute;
+    bottom: -50%;
+    left: -10%;
+    width: 500px;
+    height: 500px;
+    background: radial-gradient(circle,
+            rgba(255, 189, 189, 0.3) 0%,
+            transparent 70%);
+    border-radius: var(--radius-full);
+    pointer-events: none;
+}
+
+/* Contenedor principal */
+.photos-teaser__content {
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+}
+
+/* Ícono grande */
+.photos-teaser__icon {
+    font-size: var(--font-size-7xl);
+    line-height: 1;
+    margin-bottom: var(--space-6);
+    animation: pulse-slow 3s ease-in-out infinite;
+}
+
+/* Título */
+.photos-teaser__title {
+    font-family: var(--font-display);
+    font-size: var(--font-size-4xl);
+    font-weight: var(--font-weight-bold);
+    color: var(--color-text-primary);
+    margin-bottom: var(--space-6);
+    letter-spacing: var(--letter-spacing-tight);
+    line-height: var(--line-height-tight);
+}
+
+/* Texto descriptivo */
+.photos-teaser__text {
+    font-family: var(--font-body);
+    font-size: var(--font-size-lg);
+    font-weight: var(--font-weight-regular);
+    color: var(--color-text-secondary);
+    line-height: var(--line-height-relaxed);
+    margin-bottom: var(--space-8);
+}
+
+/* Badge "Próximamente" */
+.photos-teaser__coming-soon {
+    display: inline-block;
+    font-family: var(--font-body);
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-bold);
+    color: var(--color-text-inverse);
+    background-color: var(--color-accent-dark);
+    padding: var(--space-2) var(--space-6);
+    border-radius: var(--radius-full);
+    letter-spacing: var(--letter-spacing-wide);
+    text-transform: uppercase;
+    box-shadow: var(--shadow-md);
+}
+
+
+/* ==================
+   ANIMATIONS
+   ================== */
+
+@keyframes pulse-slow {
+
+    0%,
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    50% {
+        transform: scale(1.05);
+        opacity: 0.8;
+    }
+}
+
+
+/* ==================
+   VARIANTE: Estado activo (post-evento)
+   ================== */
+
+/* Cuando el álbum ya esté disponible */
+.photos-teaser--active .photos-teaser__coming-soon {
+    background-color: var(--color-success);
+}
+
+.photos-teaser--active .photos-teaser__coming-soon::before {
+    content: '✓ ';
+}
+
+
+/* ==================
+   RESPONSIVE
+   ================== */
+
+/* Tablet grande */
+@media (max-width: 1024px) {
+    .photos-teaser {
+        padding: var(--space-16) 0;
+    }
+
+    .photos-teaser__title {
+        font-size: var(--font-size-3xl);
+    }
+
+    .photos-teaser__text {
+        font-size: var(--font-size-base);
+    }
+
+    .photos-teaser__icon {
+        font-size: var(--font-size-6xl);
+    }
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+    .photos-teaser {
+        padding: var(--space-12) 0;
+    }
+
+    .photos-teaser__title {
+        font-size: var(--font-size-2xl);
+        margin-bottom: var(--space-4);
+    }
+
+    .photos-teaser__text {
+        margin-bottom: var(--space-6);
+    }
+
+    .photos-teaser__icon {
+        font-size: var(--font-size-5xl);
+        margin-bottom: var(--space-4);
+    }
+}
+
+/* Mobile */
+@media (max-width: 640px) {
+
+    .photos-teaser::before,
+    .photos-teaser::after {
+        display: none;
+        /* Ocultar efectos decorativos en mobile */
+    }
+}
+
+/* Mobile pequeño */
+@media (max-width: 480px) {
+    .photos-teaser {
+        padding: var(--space-10) 0;
+    }
+
+    .photos-teaser__title {
+        font-size: var(--font-size-xl);
+    }
+
+    .photos-teaser__text {
+        font-size: var(--font-size-sm);
+    }
+
+    .photos-teaser__icon {
+        font-size: var(--font-size-4xl);
+    }
+
+    .photos-teaser__coming-soon {
+        font-size: var(--font-size-xs);
+        padding: var(--space-2) var(--space-4);
+    }
+}

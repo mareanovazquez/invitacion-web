@@ -1,0 +1,207 @@
+/* ============================================
+   GIFTS SECTION
+   Información sobre regalos
+   ============================================ */
+
+.gifts {
+    padding: var(--space-20) 0;
+    background-color: var(--color-bg-secondary);
+}
+
+/* Contenedor principal */
+.gifts__content {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Título */
+.gifts__title {
+    font-family: var(--font-display);
+    font-size: var(--font-size-4xl);
+    font-weight: var(--font-weight-bold);
+    color: var(--color-text-primary);
+    margin-bottom: var(--space-6);
+    letter-spacing: var(--letter-spacing-tight);
+}
+
+/* Texto introductorio */
+.gifts__text {
+    font-family: var(--font-body);
+    font-size: var(--font-size-lg);
+    font-weight: var(--font-weight-regular);
+    color: var(--color-text-secondary);
+    line-height: var(--line-height-relaxed);
+    margin-bottom: var(--space-12);
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Grid de opciones */
+.gifts__options {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-8);
+    margin-bottom: var(--space-8);
+}
+
+/* Cada opción */
+.gifts__option {
+    background-color: var(--color-bg-elevated);
+    border-radius: var(--radius-xl);
+    padding: var(--space-10);
+    box-shadow: var(--shadow-card);
+    border: 1px solid var(--color-border-secondary);
+    transition: transform var(--transition-base), box-shadow var(--transition-base);
+}
+
+.gifts__option:hover {
+    transform: translateY(-6px);
+    box-shadow: var(--shadow-elevated);
+    border-color: var(--color-accent);
+}
+
+/* Ícono de la opción */
+.gifts__icon {
+    font-size: var(--font-size-6xl);
+    line-height: 1;
+    margin-bottom: var(--space-4);
+}
+
+/* Título de la opción */
+.gifts__option-title {
+    font-family: var(--font-display);
+    font-size: var(--font-size-2xl);
+    font-weight: var(--font-weight-bold);
+    color: var(--color-text-primary);
+    margin-bottom: var(--space-4);
+    line-height: var(--line-height-tight);
+}
+
+/* Texto de la opción */
+.gifts__option-text {
+    font-family: var(--font-body);
+    font-size: var(--font-size-base);
+    font-weight: var(--font-weight-regular);
+    color: var(--color-text-secondary);
+    line-height: var(--line-height-relaxed);
+    margin-bottom: var(--space-6);
+}
+
+/* Estilos para el texto con datos bancarios */
+.gifts__option-text strong {
+    display: block;
+    font-weight: var(--font-weight-bold);
+    color: var(--color-text-primary);
+    margin-top: var(--space-4);
+    margin-bottom: var(--space-1);
+}
+
+/* Botón de copiar CBU */
+.gifts__copy-btn {
+    margin-top: var(--space-4);
+}
+
+
+/* ==================
+   RESPONSIVE
+   ================== */
+
+/* Tablet grande */
+@media (max-width: 1024px) {
+    .gifts {
+        padding: var(--space-16) 0;
+    }
+
+    .gifts__title {
+        font-size: var(--font-size-3xl);
+    }
+
+    .gifts__text {
+        font-size: var(--font-size-base);
+        margin-bottom: var(--space-10);
+    }
+
+    .gifts__options {
+        gap: var(--space-6);
+    }
+
+    .gifts__option {
+        padding: var(--space-8);
+    }
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+    .gifts {
+        padding: var(--space-12) 0;
+    }
+
+    .gifts__title {
+        font-size: var(--font-size-2xl);
+    }
+
+    .gifts__text {
+        margin-bottom: var(--space-8);
+    }
+
+    .gifts__options {
+        gap: var(--space-5);
+    }
+
+    .gifts__option {
+        padding: var(--space-6);
+    }
+
+    .gifts__option-title {
+        font-size: var(--font-size-xl);
+    }
+
+    .gifts__icon {
+        font-size: var(--font-size-5xl);
+    }
+}
+
+/* Mobile */
+@media (max-width: 640px) {
+    .gifts__options {
+        grid-template-columns: 1fr;
+        gap: var(--space-5);
+    }
+
+    .gifts__option {
+        padding: var(--space-8);
+    }
+}
+
+/* Mobile pequeño */
+@media (max-width: 480px) {
+    .gifts {
+        padding: var(--space-10) 0;
+    }
+
+    .gifts__title {
+        font-size: var(--font-size-xl);
+    }
+
+    .gifts__text {
+        font-size: var(--font-size-sm);
+    }
+
+    .gifts__option {
+        padding: var(--space-6);
+    }
+
+    .gifts__option-title {
+        font-size: var(--font-size-lg);
+    }
+
+    .gifts__option-text {
+        font-size: var(--font-size-sm);
+    }
+
+    .gifts__icon {
+        font-size: var(--font-size-4xl);
+    }
+}

@@ -1,0 +1,223 @@
+/* ============================================
+   EVENT DETAILS SECTION
+   Grid de información del evento
+   ============================================ */
+
+.event-details {
+    padding: var(--space-20) 0;
+    background-color: var(--color-bg-secondary);
+}
+
+/* Título de la sección */
+.event-details__title {
+    font-family: var(--font-display);
+    font-size: var(--font-size-4xl);
+    font-weight: var(--font-weight-bold);
+    color: var(--color-text-primary);
+    text-align: center;
+    margin-bottom: var(--space-12);
+    letter-spacing: var(--letter-spacing-tight);
+}
+
+/* Grid de cards */
+.event-details__grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--space-6);
+    max-width: var(--max-width-xl);
+    margin: 0 auto;
+}
+
+/* Card individual */
+.event-details__card {
+    background-color: var(--color-bg-elevated);
+    border-radius: var(--radius-lg);
+    padding: var(--space-8);
+    text-align: center;
+    box-shadow: var(--shadow-card);
+    transition: transform var(--transition-base), box-shadow var(--transition-base);
+    border: 1px solid var(--color-border-secondary);
+}
+
+.event-details__card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-elevated);
+    border-color: var(--color-primary);
+}
+
+/* Ícono del card */
+.event-details__icon {
+    font-size: var(--font-size-5xl);
+    margin-bottom: var(--space-4);
+    line-height: 1;
+}
+
+/* Título del card */
+.event-details__card-title {
+    font-family: var(--font-display);
+    font-size: var(--font-size-xl);
+    font-weight: var(--font-weight-bold);
+    color: var(--color-text-primary);
+    margin-bottom: var(--space-4);
+    line-height: var(--line-height-tight);
+}
+
+/* Información principal */
+.event-details__info {
+    font-family: var(--font-body);
+    font-size: var(--font-size-base);
+    font-weight: var(--font-weight-semibold);
+    color: var(--color-text-primary);
+    line-height: var(--line-height-normal);
+    margin-bottom: var(--space-2);
+}
+
+/* Información secundaria/pequeña */
+.event-details__info-small {
+    font-family: var(--font-body);
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-regular);
+    color: var(--color-text-secondary);
+    line-height: var(--line-height-normal);
+    margin-bottom: var(--space-4);
+}
+
+/* Link al mapa */
+.event-details__map-link {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-1);
+    font-family: var(--font-body);
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-medium);
+    color: var(--color-primary-dark);
+    text-decoration: none;
+    margin-top: var(--space-3);
+    padding: var(--space-2) var(--space-4);
+    border-radius: var(--radius-sm);
+    transition: all var(--transition-base);
+}
+
+.event-details__map-link:hover {
+    background-color: var(--color-primary-light);
+    color: var(--color-primary-dark);
+}
+
+.event-details__map-link::before {
+    content: '📍';
+    font-size: var(--font-size-base);
+}
+
+
+/* ==================
+   VARIANTE: Card destacada
+   ================== */
+
+/* Opcional - para destacar un card específico (ej: la fiesta) */
+.event-details__card--featured {
+    background: linear-gradient(135deg,
+            var(--color-primary-light) 0%,
+            var(--color-bg-elevated) 100%);
+    border-color: var(--color-primary);
+}
+
+.event-details__card--featured .event-details__card-title {
+    color: var(--color-primary-dark);
+}
+
+
+/* ==================
+   RESPONSIVE
+   ================== */
+
+/* Tablet grande */
+@media (max-width: 1024px) {
+    .event-details {
+        padding: var(--space-16) 0;
+    }
+
+    .event-details__title {
+        font-size: var(--font-size-3xl);
+        margin-bottom: var(--space-10);
+    }
+
+    .event-details__grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--space-5);
+    }
+
+    .event-details__card {
+        padding: var(--space-6);
+    }
+
+    .event-details__icon {
+        font-size: var(--font-size-4xl);
+    }
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+    .event-details {
+        padding: var(--space-12) 0;
+    }
+
+    .event-details__title {
+        font-size: var(--font-size-2xl);
+        margin-bottom: var(--space-8);
+    }
+
+    .event-details__grid {
+        gap: var(--space-4);
+    }
+
+    .event-details__card {
+        padding: var(--space-5);
+    }
+
+    .event-details__card-title {
+        font-size: var(--font-size-lg);
+    }
+
+    .event-details__icon {
+        font-size: var(--font-size-3xl);
+    }
+}
+
+/* Mobile */
+@media (max-width: 640px) {
+    .event-details__grid {
+        grid-template-columns: 1fr;
+        gap: var(--space-4);
+    }
+
+    .event-details__card {
+        padding: var(--space-6);
+    }
+}
+
+/* Mobile pequeño */
+@media (max-width: 480px) {
+    .event-details {
+        padding: var(--space-10) 0;
+    }
+
+    .event-details__title {
+        font-size: var(--font-size-xl);
+    }
+
+    .event-details__icon {
+        font-size: var(--font-size-2xl);
+    }
+
+    .event-details__card-title {
+        font-size: var(--font-size-base);
+    }
+
+    .event-details__info {
+        font-size: var(--font-size-sm);
+    }
+
+    .event-details__info-small {
+        font-size: var(--font-size-xs);
+    }
+}
