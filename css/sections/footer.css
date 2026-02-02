@@ -30,6 +30,13 @@
     letter-spacing: var(--letter-spacing-wide);
 }
 
+.footer__credits a{
+        font-size: var(--font-size-xs);
+        margin-top: var(--space-1);
+        text-decoration: none;
+        color: var(--color-primary-light);
+    }
+
 /* Links en el footer (opcional) */
 .footer__link {
     color: var(--color-text-inverse);
@@ -140,6 +147,7 @@
         font-size: var(--font-size-xs);
     }
 
+    
     .footer__grid {
         grid-template-columns: 1fr;
         gap: var(--space-6);

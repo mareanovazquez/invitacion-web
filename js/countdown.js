@@ -4,7 +4,7 @@
    ============================================ */
 
 // Configuración - CAMBIAR ESTA FECHA
-const eventDate = new Date('2026-11-15T21:00:00').getTime();
+const eventDate = new Date('2026-11-07T21:00:00').getTime();
 
 // Elementos del DOM
 const daysElement = document.getElementById('days');
