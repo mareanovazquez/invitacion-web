@@ -77,27 +77,23 @@
    RESPONSIVE
    ================== */
 
-/* Tablet */
-@media (max-width: 1024px) {
+/* Mobile pequeño */
+@media (min-width: 480px) {
     .welcome {
-        padding: var(--space-16) 0;
-    }
-
-    .welcome__content {
-        max-width: 600px;
+        padding: var(--space-10) 0;
     }
 
     .welcome__title {
-        font-size: var(--font-size-3xl);
+        font-size: var(--font-size-xl);
     }
 
     .welcome__text {
-        font-size: var(--font-size-base);
+        font-size: var(--font-size-sm);
     }
 }
 
 /* Mobile */
-@media (max-width: 768px) {
+@media (min-width: 768px) {
     .welcome {
         padding: var(--space-12) 0;
     }
@@ -131,17 +127,21 @@
     }
 }
 
-/* Mobile pequeño */
-@media (max-width: 480px) {
+/* Tablet */
+@media (min-width: 1024px) {
     .welcome {
-        padding: var(--space-10) 0;
+        padding: var(--space-16) 0;
+    }
+
+    .welcome__content {
+        max-width: 600px;
     }
 
     .welcome__title {
-        font-size: var(--font-size-xl);
+        font-size: var(--font-size-3xl);
     }
 
     .welcome__text {
-        font-size: var(--font-size-sm);
+        font-size: var(--font-size-base);
     }
 }

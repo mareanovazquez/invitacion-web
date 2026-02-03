@@ -108,23 +108,42 @@
    RESPONSIVE
    ================== */
 
-/* Tablet grande */
-@media (max-width: 1024px) {
+/* Mobile pequeño */
+@media (min-width: 480px) {
     .gifts {
-        padding: var(--space-16) 0;
+        padding: var(--space-10) 0;
     }
 
     .gifts__title {
-        font-size: var(--font-size-3xl);
+        font-size: var(--font-size-xl);
     }
 
     .gifts__text {
-        font-size: var(--font-size-base);
-        margin-bottom: var(--space-10);
+        font-size: var(--font-size-sm);
     }
 
+    .gifts__option {
+        padding: var(--space-6);
+    }
+
+    .gifts__option-title {
+        font-size: var(--font-size-lg);
+    }
+
+    .gifts__option-text {
+        font-size: var(--font-size-sm);
+    }
+
+    .gifts__icon {
+        font-size: var(--font-size-4xl);
+    }
+}
+
+/* Mobile */
+@media (min-width: 640px) {
     .gifts__options {
-        gap: var(--space-6);
+        grid-template-columns: 1fr;
+        gap: var(--space-5);
     }
 
     .gifts__option {
@@ -133,7 +152,7 @@
 }
 
 /* Tablet */
-@media (max-width: 768px) {
+@media (min-width: 768px) {
     .gifts {
         padding: var(--space-12) 0;
     }
@@ -163,45 +182,26 @@
     }
 }
 
-/* Mobile */
-@media (max-width: 640px) {
+/* Tablet grande */
+@media (min-width: 1024px) {
+    .gifts {
+        padding: var(--space-16) 0;
+    }
+
+    .gifts__title {
+        font-size: var(--font-size-3xl);
+    }
+
+    .gifts__text {
+        font-size: var(--font-size-base);
+        margin-bottom: var(--space-10);
+    }
+
     .gifts__options {
-        grid-template-columns: 1fr;
-        gap: var(--space-5);
+        gap: var(--space-6);
     }
 
     .gifts__option {
         padding: var(--space-8);
-    }
-}
-
-/* Mobile pequeño */
-@media (max-width: 480px) {
-    .gifts {
-        padding: var(--space-10) 0;
-    }
-
-    .gifts__title {
-        font-size: var(--font-size-xl);
-    }
-
-    .gifts__text {
-        font-size: var(--font-size-sm);
-    }
-
-    .gifts__option {
-        padding: var(--space-6);
-    }
-
-    .gifts__option-title {
-        font-size: var(--font-size-lg);
-    }
-
-    .gifts__option-text {
-        font-size: var(--font-size-sm);
-    }
-
-    .gifts__icon {
-        font-size: var(--font-size-4xl);
     }
 }

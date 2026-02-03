@@ -132,58 +132,8 @@
    RESPONSIVE
    ================== */
 
-/* Tablet grande */
-@media (max-width: 1024px) {
-    .photos-teaser {
-        padding: var(--space-16) 0;
-    }
-
-    .photos-teaser__title {
-        font-size: var(--font-size-3xl);
-    }
-
-    .photos-teaser__text {
-        font-size: var(--font-size-base);
-    }
-
-    .photos-teaser__icon {
-        font-size: var(--font-size-6xl);
-    }
-}
-
-/* Tablet */
-@media (max-width: 768px) {
-    .photos-teaser {
-        padding: var(--space-12) 0;
-    }
-
-    .photos-teaser__title {
-        font-size: var(--font-size-2xl);
-        margin-bottom: var(--space-4);
-    }
-
-    .photos-teaser__text {
-        margin-bottom: var(--space-6);
-    }
-
-    .photos-teaser__icon {
-        font-size: var(--font-size-5xl);
-        margin-bottom: var(--space-4);
-    }
-}
-
-/* Mobile */
-@media (max-width: 640px) {
-
-    .photos-teaser::before,
-    .photos-teaser::after {
-        display: none;
-        /* Ocultar efectos decorativos en mobile */
-    }
-}
-
 /* Mobile pequeño */
-@media (max-width: 480px) {
+@media (min-width: 480px) {
     .photos-teaser {
         padding: var(--space-10) 0;
     }
@@ -203,5 +153,55 @@
     .photos-teaser__coming-soon {
         font-size: var(--font-size-xs);
         padding: var(--space-2) var(--space-4);
+    }
+}
+
+/* Mobile */
+@media (min-width: 640px) {
+
+    .photos-teaser::before,
+    .photos-teaser::after {
+        display: none;
+        /* Ocultar efectos decorativos en mobile */
+    }
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+    .photos-teaser {
+        padding: var(--space-12) 0;
+    }
+
+    .photos-teaser__title {
+        font-size: var(--font-size-2xl);
+        margin-bottom: var(--space-4);
+    }
+
+    .photos-teaser__text {
+        margin-bottom: var(--space-6);
+    }
+
+    .photos-teaser__icon {
+        font-size: var(--font-size-5xl);
+        margin-bottom: var(--space-4);
+    }
+}
+
+/* Tablet grande */
+@media (min-width: 1024px) {
+    .photos-teaser {
+        padding: var(--space-16) 0;
+    }
+
+    .photos-teaser__title {
+        font-size: var(--font-size-3xl);
+    }
+
+    .photos-teaser__text {
+        font-size: var(--font-size-base);
+    }
+
+    .photos-teaser__icon {
+        font-size: var(--font-size-6xl);
     }
 }

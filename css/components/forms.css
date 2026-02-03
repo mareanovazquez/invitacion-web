@@ -163,11 +163,7 @@ label.required::after {
 }
 
 
-/* ==================
-   RESPONSIVE
-   ================== */
-
-@media (max-width: 768px) {
+@media (min-width: 768px) {
 
     .form-input,
     .form-select,

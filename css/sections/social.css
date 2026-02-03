@@ -109,69 +109,8 @@
    RESPONSIVE
    ================== */
 
-/* Tablet grande */
-@media (max-width: 1024px) {
-    .social {
-        padding: var(--space-16) 0;
-    }
-
-    .social__title {
-        font-size: var(--font-size-3xl);
-        margin-bottom: var(--space-10);
-    }
-
-    .social__grid {
-        gap: var(--space-6);
-    }
-
-    .social__card {
-        padding: var(--space-8);
-    }
-
-    .social__icon {
-        font-size: var(--font-size-5xl);
-    }
-}
-
-/* Tablet */
-@media (max-width: 768px) {
-    .social {
-        padding: var(--space-12) 0;
-    }
-
-    .social__title {
-        font-size: var(--font-size-2xl);
-        margin-bottom: var(--space-8);
-    }
-
-    .social__grid {
-        gap: var(--space-5);
-    }
-
-    .social__card-title {
-        font-size: var(--font-size-xl);
-    }
-
-    .social__icon {
-        font-size: var(--font-size-4xl);
-    }
-}
-
-/* Mobile */
-@media (max-width: 640px) {
-    .social__grid {
-        grid-template-columns: 1fr;
-        gap: var(--space-5);
-        max-width: 400px;
-    }
-
-    .social__card {
-        padding: var(--space-8);
-    }
-}
-
 /* Mobile pequeño */
-@media (max-width: 480px) {
+@media (min-width: 480px) {
     .social {
         padding: var(--space-10) 0;
     }
@@ -194,5 +133,66 @@
 
     .social__username {
         font-size: var(--font-size-sm);
+    }
+}
+
+/* Mobile */
+@media (min-width: 640px) {
+    .social__grid {
+        grid-template-columns: 1fr;
+        gap: var(--space-5);
+        max-width: 400px;
+    }
+
+    .social__card {
+        padding: var(--space-8);
+    }
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+    .social {
+        padding: var(--space-12) 0;
+    }
+
+    .social__title {
+        font-size: var(--font-size-2xl);
+        margin-bottom: var(--space-8);
+    }
+
+    .social__grid {
+        gap: var(--space-5);
+    }
+
+    .social__card-title {
+        font-size: var(--font-size-xl);
+    }
+
+    .social__icon {
+        font-size: var(--font-size-4xl);
+    }
+}
+
+/* Tablet grande */
+@media (min-width: 1024px) {
+    .social {
+        padding: var(--space-16) 0;
+    }
+
+    .social__title {
+        font-size: var(--font-size-3xl);
+        margin-bottom: var(--space-10);
+    }
+
+    .social__grid {
+        gap: var(--space-6);
+    }
+
+    .social__card {
+        padding: var(--space-8);
+    }
+
+    .social__icon {
+        font-size: var(--font-size-5xl);
     }
 }

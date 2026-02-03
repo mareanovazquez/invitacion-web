@@ -121,19 +121,19 @@
    RESPONSIVE
    ================== */
 
-/* Tablet */
-@media (max-width: 1024px) {
+/* Mobile pequeño */
+@media (min-width: 480px) {
     .footer {
-        padding: var(--space-10) 0;
+        padding: var(--space-6) 0;
     }
 
     .footer__text {
-        font-size: var(--font-size-base);
+        font-size: var(--font-size-sm);
     }
 }
 
 /* Mobile */
-@media (max-width: 768px) {
+@media (min-width: 768px) {
     .footer {
         padding: var(--space-8) 0;
     }
@@ -147,7 +147,7 @@
         font-size: var(--font-size-xs);
     }
 
-    
+
     .footer__grid {
         grid-template-columns: 1fr;
         gap: var(--space-6);
@@ -163,13 +163,13 @@
     }
 }
 
-/* Mobile pequeño */
-@media (max-width: 480px) {
+/* Tablet */
+@media (min-width: 1024px) {
     .footer {
-        padding: var(--space-6) 0;
+        padding: var(--space-10) 0;
     }
 
     .footer__text {
-        font-size: var(--font-size-sm);
+        font-size: var(--font-size-base);
     }
 }

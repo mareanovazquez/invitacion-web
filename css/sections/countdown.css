@@ -71,28 +71,23 @@
    RESPONSIVE
    ================== */
 
-/* Tablet */
-@media (max-width: 1024px) {
-  .countdown {
-    padding: var(--space-12) 0;
-  }
-
+/* Mobile pequeño */
+@media (min-width: 480px) {
   .countdown__timer {
-    gap: var(--space-4);
-  }
-
-  .countdown__number {
-    font-size: var(--font-size-4xl);
-    min-width: 60px;
+    gap: var(--space-3);
   }
 
   .countdown__item {
-    padding: var(--space-4);
+    padding: var(--space-3);
+  }
+
+  .countdown__number {
+    font-size: var(--font-size-2xl);
   }
 }
 
 /* Mobile */
-@media (max-width: 768px) {
+@media (min-width: 768px) {
   .countdown {
     padding: var(--space-10) 0;
   }
@@ -118,18 +113,23 @@
   }
 }
 
-/* Mobile pequeño */
-@media (max-width: 480px) {
-  .countdown__timer {
-    gap: var(--space-3);
+/* Tablet */
+@media (min-width: 1024px) {
+  .countdown {
+    padding: var(--space-12) 0;
   }
 
-  .countdown__item {
-    padding: var(--space-3);
+  .countdown__timer {
+    gap: var(--space-4);
   }
 
   .countdown__number {
-    font-size: var(--font-size-2xl);
+    font-size: var(--font-size-4xl);
+    min-width: 60px;
+  }
+
+  .countdown__item {
+    padding: var(--space-4);
   }
 }
 

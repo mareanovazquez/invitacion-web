@@ -1,4 +1,4 @@
-# Invitación Web – Quince Años de Ana
+# Invitación Web – Casamiento de Fabricio y Valeria
 
 Proyecto frontend estático para una invitación digital de cumpleaños de 15. Incluye secciones para héroe, cuenta regresiva, mensaje de bienvenida, detalles del evento, galería con lightbox, redes sociales, confirmación de asistencia (RSVP), regalos y pie de página.
 
@@ -67,6 +67,7 @@ Proyecto frontend estático para una invitación digital de cumpleaños de 15. I
 - Mantener los cambios de contenido en `index.html` y la configuración visual en `css/`
 - Evitar lógica compleja en el DOM; reutilizar utilidades existentes en `js/`
 - Comprobar visualmente en móvil y escritorio tras cada modificación
+- Las media queries se organizan siguiendo la metodología mobile-first: estilos base para móviles en la parte superior, y media queries con `min-width` al final de cada archivo CSS para dispositivos más grandes
 
 **Licencia**
 Este proyecto es de uso personal. Ajustar la licencia según necesidad.

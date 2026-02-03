@@ -130,33 +130,47 @@
    RESPONSIVE
    ================== */
 
-/* Tablet grande */
-@media (max-width: 1024px) {
+/* Mobile pequeño */
+@media (min-width: 480px) {
     .event-details {
-        padding: var(--space-16) 0;
+        padding: var(--space-10) 0;
     }
 
     .event-details__title {
-        font-size: var(--font-size-3xl);
-        margin-bottom: var(--space-10);
+        font-size: var(--font-size-xl);
     }
 
+    .event-details__icon {
+        font-size: var(--font-size-2xl);
+    }
+
+    .event-details__card-title {
+        font-size: var(--font-size-base);
+    }
+
+    .event-details__info {
+        font-size: var(--font-size-sm);
+    }
+
+    .event-details__info-small {
+        font-size: var(--font-size-xs);
+    }
+}
+
+/* Mobile */
+@media (min-width: 640px) {
     .event-details__grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: var(--space-5);
+        grid-template-columns: 1fr;
+        gap: var(--space-4);
     }
 
     .event-details__card {
         padding: var(--space-6);
     }
-
-    .event-details__icon {
-        font-size: var(--font-size-4xl);
-    }
 }
 
 /* Tablet */
-@media (max-width: 768px) {
+@media (min-width: 768px) {
     .event-details {
         padding: var(--space-12) 0;
     }
@@ -183,41 +197,27 @@
     }
 }
 
-/* Mobile */
-@media (max-width: 640px) {
+/* Tablet grande */
+@media (min-width: 1024px) {
+    .event-details {
+        padding: var(--space-16) 0;
+    }
+
+    .event-details__title {
+        font-size: var(--font-size-3xl);
+        margin-bottom: var(--space-10);
+    }
+
     .event-details__grid {
-        grid-template-columns: 1fr;
-        gap: var(--space-4);
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--space-5);
     }
 
     .event-details__card {
         padding: var(--space-6);
     }
-}
-
-/* Mobile pequeño */
-@media (max-width: 480px) {
-    .event-details {
-        padding: var(--space-10) 0;
-    }
-
-    .event-details__title {
-        font-size: var(--font-size-xl);
-    }
 
     .event-details__icon {
-        font-size: var(--font-size-2xl);
-    }
-
-    .event-details__card-title {
-        font-size: var(--font-size-base);
-    }
-
-    .event-details__info {
-        font-size: var(--font-size-sm);
-    }
-
-    .event-details__info-small {
-        font-size: var(--font-size-xs);
+        font-size: var(--font-size-4xl);
     }
 }
