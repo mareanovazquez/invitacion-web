@@ -181,6 +181,10 @@
         background-image: url('../../../../img/bg-main-desktop.png');
     }
 
+    /* Contenido principal */
+.hero__content {
+    left: 10%;
+}
     .hero__pretitle {
         font-size: var(--font-size-3xl);
     }
