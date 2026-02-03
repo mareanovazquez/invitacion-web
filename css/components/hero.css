@@ -14,7 +14,7 @@
     overflow: hidden;
 
     /* Background image - Reemplazar con foto real */
-    background-image: url('../../../../img/bg-main.png');
+    background-image: url('../../../../img/bg-main-mobile.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -27,11 +27,11 @@
     left: 0;
     width: 100%;
     height: 100%;
-    /* background: linear-gradient(180deg,
+    background: linear-gradient(180deg,
             rgba(10, 46, 54, 0.3) 0%,
-            rgba(10, 46, 54, 0.6) 100%); */
+            rgba(10, 46, 54, 0.6) 100%); 
     z-index: 1;
-    
+
 }
 
 /* Contenido principal */
@@ -46,11 +46,12 @@
 /* Pre-título */
 .hero__pretitle {
     font-family: var(--font-display);
-    font-size: var(--font-size-7xl);
+    font-size: var(--font-size-2xl);
     font-weight: var(--font-weight-light);
     letter-spacing: var(--letter-spacing-wider);
-        margin-bottom: var(--space-4);
+    margin-bottom: var(--space-4);
     opacity: 0.9;
+    color: var(--color-text-inverse);
 }
 
 /* Título principal */
@@ -62,15 +63,17 @@
     letter-spacing: var(--letter-spacing-tight);
     margin-bottom: var(--space-4);
     text-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    color: var(--color-text-inverse);
 }
 
 /* Subtítulo (fecha) */
 .hero__subtitle {
     font-family: var(--font-body);
-    font-size: var(--font-size-2xl);
+    font-size: var(--font-size-xl);
     font-weight: var(--font-weight-black);
     letter-spacing: var(--letter-spacing-wide);
     opacity: 0.95;
+    color: var(--color-text-inverse);
 }
 
 /* Scroll indicator */
@@ -167,7 +170,7 @@
 /* Mobile pequeño */
 @media (min-width: 480px) {
     .hero__title {
-        font-size: var(--font-size-4xl);
+        font-size: var(--font-size-7xl);
     }
 }
 
@@ -175,14 +178,15 @@
 @media (min-width: 768px) {
     .hero {
         min-height: 100vh;
+        background-image: url('../../../../img/bg-main-desktop.png');
     }
 
     .hero__pretitle {
-        font-size: var(--font-size-7xl);
+        font-size: var(--font-size-3xl);
     }
 
     .hero__title {
-        font-size: var(--font-size-7xl);
+        font-size: 8rem;
     }
 
     .hero__subtitle {
@@ -202,10 +206,11 @@
 @media (min-width: 1024px) {
     .hero {
         min-height: 500px;
+    
     }
 
     .hero__title {
-        font-size: var(--font-size-6xl);
+        font-size: 8rem;
     }
 
     .hero__subtitle {
