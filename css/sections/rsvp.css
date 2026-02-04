@@ -149,6 +149,14 @@ select.rsvp__input {
     transition: all var(--transition-base);
 }
 
+.rsvp__calendar-link svg {
+    width: 1.5em;
+    height: 1.5em;
+    stroke: var(--color-primary-dark);
+    fill: var(--color-primary-light);
+    stroke-width: 1.5;
+}
+
 .rsvp__calendar-link:hover {
     background-color: var(--color-primary-light);
     color: var(--color-primary-dark);

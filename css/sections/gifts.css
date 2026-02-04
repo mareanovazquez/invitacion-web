@@ -66,8 +66,18 @@
 .gifts__icon {
     font-size: var(--font-size-6xl);
     line-height: 1;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: var(--space-4);
 }
+
+.gifts__icon svg {
+    stroke: var(--color-primary-dark);
+    fill: var(--color-primary-light);
+    stroke-width: 1.5;
+}
+
 
 /* Título de la opción */
 .gifts__option-title {

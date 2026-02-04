@@ -54,8 +54,16 @@
 .photos-teaser__icon {
     font-size: var(--font-size-7xl);
     line-height: 1;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: var(--space-6);
     animation: pulse-slow 3s ease-in-out infinite;
+}
+.photos-teaser__icon svg {
+    stroke: var(--color-accent-dark);
+    fill: var(--color-accent-light);
+    stroke-width: 1.5;
 }
 
 /* Título */

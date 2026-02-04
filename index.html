@@ -75,21 +75,31 @@
                     baile y los mejores momentos.
                 </p>
                 <p class="welcome__signature">Con cariño, Vale y Fabri </p>
+
             </div>
         </div>
     </section>
 
-
     <!--        EVENT DETAILS         -->
     <section class="event-details">
-        <div class="container">
+        <div class="container container--event-details">
             <h2 class="event-details__title">Detalles del evento</h2>
 
             <div class="event-details__grid">
 
                 <!-- Fecha y Hora -->
                 <div class="event-details__card">
-                    <div class="event-details__icon"><i class="fa-regular fa-calendar-days"></i></div>
+                    <div class="event-details__icon"> <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48"
+                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0.75"
+                            stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-calendar-fold-icon lucide-calendar-fold">
+                            <path
+                                d="M3 20a2 2 0 0 0 2 2h10a2.4 2.4 0 0 0 1.706-.706l3.588-3.588A2.4 2.4 0 0 0 21 16V6a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2z" />
+                            <path d="M15 22v-5a1 1 0 0 1 1-1h5" />
+                            <path d="M8 2v4" />
+                            <path d="M16 2v4" />
+                            <path d="M3 10h18" />
+                        </svg> </div>
                     <h3 class="event-details__card-title">Fecha y Hora</h3>
                     <p class="event-details__info">Sábado 15 de Febrero</p>
                     <p class="event-details__info">21:00 hs</p>
@@ -97,25 +107,71 @@
 
                 <!-- Ceremonia -->
                 <div class="event-details__card">
-                    <div class="event-details__icon"><i class="fa-solid fa-church"></i></div>
+                    <div class="event-details__icon"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48"
+                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0.75"
+                            stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-church-icon lucide-church">
+                            <path d="M10 9h4" />
+                            <path d="M12 7v5" />
+                            <path d="M14 21v-3a2 2 0 0 0-4 0v3" />
+                            <path
+                                d="m18 9 3.52 2.147a1 1 0 0 1 .48.854V19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2v-6.999a1 1 0 0 1 .48-.854L6 9" />
+                            <path d="M6 21V7a1 1 0 0 1 .376-.782l5-3.999a1 1 0 0 1 1.249.001l5 4A1 1 0 0 1 18 7v14" />
+                        </svg></div>
                     <h3 class="event-details__card-title">Ceremonia</h3>
                     <p class="event-details__info">Parroquia San Miguel</p>
                     <p class="event-details__info-small">Av. Libertador 1234, CABA</p>
-                    <a href="https://maps.google.com" class="event-details__map-link" target="_blank">Ver en mapa</a>
+                    <a href="https://maps.google.com" class="event-details__map-link" target="_blank"><svg
+                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-pin-icon lucide-pin">
+                            <path d="M12 17v5" />
+                            <path
+                                d="M9 10.76a2 2 0 0 1-1.11 1.79l-1.78.9A2 2 0 0 0 5 15.24V16a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-.76a2 2 0 0 0-1.11-1.79l-1.78-.9A2 2 0 0 1 15 10.76V7a1 1 0 0 1 1-1 2 2 0 0 0 0-4H8a2 2 0 0 0 0 4 1 1 0 0 1 1 1z" />
+                        </svg> Ver en mapa</a>
                 </div>
 
                 <!-- Fiesta -->
                 <div class="event-details__card">
-                    <div class="event-details__icon"><i class="fa-solid fa-champagne-glasses"></i></div>
+                    <div class="event-details__icon"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48"
+                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0.75"
+                            stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-party-popper-icon lucide-party-popper">
+                            <path d="M5.8 11.3 2 22l10.7-3.79" />
+                            <path d="M4 3h.01" />
+                            <path d="M22 8h.01" />
+                            <path d="M15 2h.01" />
+                            <path d="M22 20h.01" />
+                            <path
+                                d="m22 2-2.24.75a2.9 2.9 0 0 0-1.96 3.12c.1.86-.57 1.63-1.45 1.63h-.38c-.86 0-1.6.6-1.76 1.44L14 10" />
+                            <path d="m22 13-.82-.33c-.86-.34-1.82.2-1.98 1.11c-.11.7-.72 1.22-1.43 1.22H17" />
+                            <path d="m11 2 .33.82c.34.86-.2 1.82-1.11 1.98C9.52 4.9 9 5.52 9 6.23V7" />
+                            <path
+                                d="M11 13c1.93 1.93 2.83 4.17 2 5-.83.83-3.07-.07-5-2-1.93-1.93-2.83-4.17-2-5 .83-.83 3.07.07 5 2Z" />
+                        </svg></div>
                     <h3 class="event-details__card-title">Fiesta</h3>
                     <p class="event-details__info">Salón Golden Palace</p>
                     <p class="event-details__info-small">Av. del Libertador 5678, CABA</p>
-                    <a href="https://maps.google.com" class="event-details__map-link" target="_blank">Ver en mapa</a>
+                    <a href="https://maps.google.com" class="event-details__map-link" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-pin-icon lucide-pin">
+                            <path d="M12 17v5" />
+                            <path
+                                d="M9 10.76a2 2 0 0 1-1.11 1.79l-1.78.9A2 2 0 0 0 5 15.24V16a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-.76a2 2 0 0 0-1.11-1.79l-1.78-.9A2 2 0 0 1 15 10.76V7a1 1 0 0 1 1-1 2 2 0 0 0 0-4H8a2 2 0 0 0 0 4 1 1 0 0 1 1 1z" />
+                        </svg>
+                        Ver en mapa</a>
                 </div>
 
                 <!-- Dress Code -->
                 <div class="event-details__card">
-                    <div class="event-details__icon">👗</div>
+                    <div class="event-details__icon"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48"
+                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0.75"
+                            stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-shirt-icon lucide-shirt">
+                            <path
+                                d="M20.38 3.46 16 2a4 4 0 0 1-8 0L3.62 3.46a2 2 0 0 0-1.34 2.23l.58 3.47a1 1 0 0 0 .99.84H6v10c0 1.1.9 2 2 2h8a2 2 0 0 0 2-2V10h2.15a1 1 0 0 0 .99-.84l.58-3.47a2 2 0 0 0-1.34-2.23z" />
+                        </svg></div>
                     <h3 class="event-details__card-title">Dress Code</h3>
                     <p class="event-details__info">Elegante Sport</p>
                     <p class="event-details__info-small">Evitar color rosa</p>
@@ -163,7 +219,14 @@
 
                 <!-- Instagram -->
                 <div class="social__card">
-                    <div class="social__icon">📸</div>
+                    <div class="social__icon"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48"
+                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0.75"
+                            stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-instagram-icon lucide-instagram">
+                            <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
+                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                            <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
+                        </svg></div>
                     <h3 class="social__card-title">Instagram</h3>
                     <p class="social__username">@ana.15años</p>
                     <a href="https://instagram.com/ana.15años" class="btn btn--outline" target="_blank">Seguir</a>
@@ -171,7 +234,14 @@
 
                 <!-- Spotify Playlist -->
                 <div class="social__card">
-                    <div class="social__icon">🎵</div>
+                    <div class="social__icon"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48"
+                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0.75"
+                            stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-music-icon lucide-music">
+                            <path d="M9 18V5l12-2v13" />
+                            <circle cx="6" cy="18" r="3" />
+                            <circle cx="18" cy="16" r="3" />
+                        </svg></div>
                     <h3 class="social__card-title">Playlist de la Fiesta</h3>
                     <p class="social__username">Mis canciones favoritas</p>
                     <a href="https://open.spotify.com/playlist/xxxxx" class="btn btn--outline"
@@ -224,7 +294,17 @@
                 </div>
 
                 <div class="rsvp__calendar">
-                    <a href="#" class="rsvp__calendar-link">📅 Agregar a mi calendario</a>
+                    <a href="#" class="rsvp__calendar-link"><svg xmlns="http://www.w3.org/2000/svg" width="36"
+                            height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0.75"
+                            stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-calendar-heart-icon lucide-calendar-heart">
+                            <path d="M12.127 22H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v5.125" />
+                            <path
+                                d="M14.62 18.8A2.25 2.25 0 1 1 18 15.836a2.25 2.25 0 1 1 3.38 2.966l-2.626 2.856a.998.998 0 0 1-1.507 0z" />
+                            <path d="M16 2v4" />
+                            <path d="M3 10h18" />
+                            <path d="M8 2v4" />
+                        </svg> Agregar a mi calendario</a>
                 </div>
             </div>
         </div>
@@ -243,13 +323,28 @@
 
                 <div class="gifts__options">
                     <div class="gifts__option">
-                        <div class="gifts__icon"><i class="fa-solid fa-gift"></i></div>
+                        <div class="gifts__icon"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48"
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0.75"
+                                stroke-linecap="round" stroke-linejoin="round"
+                                class="lucide lucide-gift-icon lucide-gift">
+                                <rect x="3" y="8" width="18" height="4" rx="1" />
+                                <path d="M12 8v13" />
+                                <path d="M19 12v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-7" />
+                                <path
+                                    d="M7.5 8a2.5 2.5 0 0 1 0-5A4.8 8 0 0 1 12 8a4.8 8 0 0 1 4.5-5 2.5 2.5 0 0 1 0 5" />
+                            </svg></div>
                         <h3 class="gifts__option-title">Lluvia de sobres</h3>
                         <p class="gifts__option-text">Habrá un buzón en la fiesta</p>
                     </div>
 
                     <div class="gifts__option">
-                        <div class="gifts__icon"><i class="fa-solid fa-credit-card"></i></div>
+                        <div class="gifts__icon"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48"
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0.75"
+                                stroke-linecap="round" stroke-linejoin="round"
+                                class="lucide lucide-credit-card-icon lucide-credit-card">
+                                <rect width="20" height="14" x="2" y="5" rx="2" />
+                                <line x1="2" x2="22" y1="10" y2="10" />
+                            </svg></div>
                         <h3 class="gifts__option-title">Transferencia</h3>
                         <p class="gifts__option-text">
                             <strong>Alias:</strong> ana.cumple15<br>
@@ -267,7 +362,16 @@
     <section class="photos-teaser">
         <div class="container">
             <div class="photos-teaser__content">
-                <div class="photos-teaser__icon"><i class="fa-solid fa-camera"></i></div>
+                <div class="photos-teaser__icon"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48"
+                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0.75" stroke-linecap="round"
+                        stroke-linejoin="round" class="lucide lucide-calendar-heart-icon lucide-calendar-heart">
+                        <path d="M12.127 22H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v5.125" />
+                        <path
+                            d="M14.62 18.8A2.25 2.25 0 1 1 18 15.836a2.25 2.25 0 1 1 3.38 2.966l-2.626 2.856a.998.998 0 0 1-1.507 0z" />
+                        <path d="M16 2v4" />
+                        <path d="M3 10h18" />
+                        <path d="M8 2v4" />
+                    </svg></div>
                 <h2 class="photos-teaser__title">Las fotos de la fiesta</h2>
                 <p class="photos-teaser__text">
                     Después del evento, todas las fotos profesionales van a estar disponibles acá

@@ -22,7 +22,7 @@
 /* Grid de cards */
 .event-details__grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: 1fr;
     gap: var(--space-6);
     max-width: var(--max-width-xl);
     margin: 0 auto;
@@ -46,10 +46,17 @@
 }
 
 /* Ícono del card */
-.event-details__icon {
-    font-size: var(--font-size-5xl);
+.event-details__icon svg {
+    width: 48px;
+    height: 48px;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: var(--space-4);
-    line-height: 1;
+    stroke: var(--color-primary-dark);
+    fill: var(--color-primary-light);
+    stroke-width: 1.5;
+    
+    
 }
 
 /* Título del card */
@@ -98,15 +105,17 @@
     transition: all var(--transition-base);
 }
 
+.event-details__map-link svg {
+    stroke: var(--color-primary-dark);
+    fill: var(--color-primary-light);
+    stroke-width: 1.5;
+}
 .event-details__map-link:hover {
     background-color: var(--color-primary-light);
     color: var(--color-primary-dark);
 }
 
-.event-details__map-link::before {
-    content: '📍';
-    font-size: var(--font-size-base);
-}
+
 
 
 /* ==================
@@ -136,8 +145,15 @@
         padding: var(--space-10) 0;
     }
 
+    .event-details__grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 10px;
+        grid-row-gap: 10px;
+    }
+
     .event-details__title {
-        font-size: var(--font-size-xl);
+        font-size: var(--font-size-4xl);
     }
 
     .event-details__icon {
@@ -157,17 +173,6 @@
     }
 }
 
-/* Mobile */
-@media (min-width: 640px) {
-    .event-details__grid {
-        grid-template-columns: 1fr;
-        gap: var(--space-4);
-    }
-
-    .event-details__card {
-        padding: var(--space-6);
-    }
-}
 
 /* Tablet */
 @media (min-width: 768px) {
@@ -175,8 +180,13 @@
         padding: var(--space-12) 0;
     }
 
+    .event-details__grid {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: none;
+    }
+
     .event-details__title {
-        font-size: var(--font-size-2xl);
+        font-size: var(--font-size-5xl);
         margin-bottom: var(--space-8);
     }
 
@@ -204,14 +214,10 @@
     }
 
     .event-details__title {
-        font-size: var(--font-size-3xl);
+        font-size: var(--font-size-6xl);
         margin-bottom: var(--space-10);
     }
 
-    .event-details__grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: var(--space-5);
-    }
 
     .event-details__card {
         padding: var(--space-6);
