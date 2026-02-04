@@ -28,7 +28,7 @@
 /* Párrafos de texto */
 .welcome__text {
     font-family: var(--font-body);
-    font-size: var(--font-size-lg);
+    font-size: var(--font-size-base);
     font-weight: var(--font-weight-regular);
     color: var(--color-text-secondary);
     line-height: var(--line-height-relaxed);
@@ -84,11 +84,11 @@
     }
 
     .welcome__title {
-        font-size: var(--font-size-xl);
+        font-size: var(--font-size-4xl);
     }
 
     .welcome__text {
-        font-size: var(--font-size-sm);
+        font-size: var(--font-size-base);
     }
 }
 
@@ -103,12 +103,12 @@
     }
 
     .welcome__title {
-        font-size: var(--font-size-2xl);
+        font-size: var(--font-size-5xl);
         margin-bottom: var(--space-6);
     }
 
     .welcome__text {
-        font-size: var(--font-size-base);
+        font-size: var(--font-size-lg);
         margin-bottom: var(--space-4);
     }
 
@@ -134,14 +134,17 @@
     }
 
     .welcome__content {
-        max-width: 600px;
+        max-width: 800px;
     }
 
     .welcome__title {
-        font-size: var(--font-size-3xl);
+        font-size: var(--font-size-6xl);
     }
 
     .welcome__text {
-        font-size: var(--font-size-base);
+        font-size: var(--font-size-xl);
+    }
+    .welcome__signature {
+        font-size: var(--font-size-xl);
     }
 }
