@@ -1,4 +1,4 @@
-# Invitación Web – Casamiento de Fabricio y Valeria
+﻿# Invitación Web – Casamiento de Fabricio y Valeria
 
 Proyecto frontend estático para una invitación digital de cumpleaños de 15. Incluye secciones para héroe, cuenta regresiva, mensaje de bienvenida, detalles del evento, galería con lightbox, redes sociales, confirmación de asistencia (RSVP), regalos y pie de página.
 
@@ -15,33 +15,41 @@ Proyecto frontend estático para una invitación digital de cumpleaños de 15. I
 - JavaScript Vanilla
 
 **Estructura de Archivos**
-- `index.html`
-- `css/`
-  - `variables.css` – Variables globales de colores y tipografías
-  - `reset.css` – Reset de estilos base
-  - `base.css` – Estilos tipográficos y utilidades
-  - `main.css` – Importa y orquesta estilos de componentes y secciones
-  - `components/`
-    - `buttons.css` – Variantes de botones
-    - `cards.css` – Tarjetas informativas
-    - `forms.css` – Campos y formularios
-    - `hero.css` – Portada principal
-    - `ligthtbox.css` – Estilos del lightbox de la galería
-  - `sections/`
-    - `welcome.css` – Mensaje de bienvenida
-    - `countdown.css` – Banner de cuenta regresiva
-    - `event-details.css` – Detalles del evento
-    - `gallery.css` – Galería de imágenes
-    - `social.css` – Redes sociales
-    - `rsvp.css` – Confirmación de asistencia
-    - `gifts.css` – Sección de regalos
-    - `photo-teaser.css` – Teaser de fotos post-evento
-    - `footer.css` – Pie de página
-- `js/`
-  - `countdown.js` – Lógica del contador regresivo
-  - `gallery.js` – Lightbox de la galería
-  - `main.js` – Utilidades (copiar CBU)
-
+```
+InvitacionWeb/
+├── assets/
+├── css/
+│   ├── components/
+│   │   ├── buttons.css
+│   │   ├── cards.css
+│   │   ├── forms.css
+│   │   ├── hero.css
+│   │   └── ligthtbox.css
+│   ├── sections/
+│   │   ├── countdown.css
+│   │   ├── event-details.css
+│   │   ├── footer.css
+│   │   ├── gallery.css
+│   │   ├── gifts.css
+│   │   ├── photo-teaser.css
+│   │   ├── rsvp.css
+│   │   ├── social.css
+│   │   └── welcome.css
+│   ├── base.css
+│   ├── main.css
+│   ├── reset.css
+│   └── variables.css
+├── img/
+│   ├── bg-main-desktop.png
+│   └── bg-main-mobile.png
+├── js/
+│   ├── countdown.js
+│   ├── gallery.js
+│   └── main.js
+├── estructura-archivos.txt
+├── index.html
+└── README.md
+```
 **Cómo Ejecutar**
 - Abrir `index.html` directamente en el navegador
 - Opcional: usar un servidor local (por ejemplo, extensiones como Live Server) para habilitar rutas relativas y mejoras de caché

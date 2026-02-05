@@ -1,0 +1,33 @@
+﻿InvitacionWeb/
+├── assets/
+├── css/
+│   ├── components/
+│   │   ├── buttons.css
+│   │   ├── cards.css
+│   │   ├── forms.css
+│   │   ├── hero.css
+│   │   └── ligthtbox.css
+│   ├── sections/
+│   │   ├── countdown.css
+│   │   ├── event-details.css
+│   │   ├── footer.css
+│   │   ├── gallery.css
+│   │   ├── gifts.css
+│   │   ├── photo-teaser.css
+│   │   ├── rsvp.css
+│   │   ├── social.css
+│   │   └── welcome.css
+│   ├── base.css
+│   ├── main.css
+│   ├── reset.css
+│   └── variables.css
+├── img/
+│   ├── bg-main-desktop.png
+│   └── bg-main-mobile.png
+├── js/
+│   ├── countdown.js
+│   ├── gallery.js
+│   └── main.js
+├── estructura-archivos.txt
+├── index.html
+└── README.md
