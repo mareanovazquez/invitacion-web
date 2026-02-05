@@ -1,17 +1,12 @@
-/* ============================================
-   GALLERY LIGHTBOX
-   Click en imagen para ver en grande
-   ============================================ */
-
 // Crear el lightbox en el DOM
 const lightbox = document.createElement('div');
 lightbox.className = 'lightbox';
 lightbox.innerHTML = `
   <div class="lightbox__overlay"></div>
-  <button class="lightbox__close">✕</button>
+  <button class="lightbox__close"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-x-icon lucide-circle-x"><circle cx="12" cy="12" r="10"/><path d="m15 9-6 6"/><path d="m9 9 6 6"/></svg></button>
   <img class="lightbox__image" src="" alt="">
-  <button class="lightbox__prev">‹</button>
-  <button class="lightbox__next">›</button>
+  <button class="lightbox__prev"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-move-left-icon lucide-move-left"><path d="M6 8L2 12L6 16"/><path d="M2 12H22"/></svg></button>
+  <button class="lightbox__next"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-move-right-icon lucide-move-right"><path d="M18 8L22 12L18 16"/><path d="M2 12H22"/></svg></button>
 `;
 document.body.appendChild(lightbox);
 
