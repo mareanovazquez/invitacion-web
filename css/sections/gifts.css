@@ -89,6 +89,8 @@
     line-height: var(--line-height-tight);
 }
 
+
+
 /* Texto de la opción */
 .gifts__option-text {
     font-family: var(--font-body);
@@ -100,8 +102,7 @@
 }
 
 /* Estilos para el texto con datos bancarios */
-.gifts__option-text strong {
-    display: block;
+.gifts__option-text span {
     font-weight: var(--font-weight-bold);
     color: var(--color-text-primary);
     margin-top: var(--space-4);
@@ -129,7 +130,7 @@
     }
 
     .gifts__text {
-        font-size: var(--font-size-sm);
+        font-size: var(--font-size-base);
     }
 
     .gifts__option {
@@ -157,8 +158,9 @@
     }
 
     .gifts__options {
-        grid-template-columns: 1fr 1fr;
-        gap: var(--space-5);
+        width: 60%;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .gifts__option {
@@ -178,10 +180,11 @@
 
     .gifts__text {
         margin-bottom: var(--space-8);
+        font-size: var(--font-size-base);
     }
 
     .gifts__options {
-        gap: var(--space-5);
+        width: 50%;
     }
 
     .gifts__option {
@@ -208,7 +211,7 @@
     }
 
     .gifts__text {
-        font-size: var(--font-size-base);
+        font-size: var(--font-size-xl);
         margin-bottom: var(--space-10);
     }
 
