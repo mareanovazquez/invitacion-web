@@ -130,7 +130,7 @@
 
     .social__card {
         padding: var(--space-6);
-        max-width: 400px;
+        width: 75%;
         margin-left: auto;
         margin-right: auto
     }
@@ -144,7 +144,7 @@
     }
 
     .social__username {
-        font-size: var(--font-size-sm);
+        font-size: var(--font-size-base);
     }
 }
 
@@ -158,7 +158,7 @@
 
     .social__card {
         padding: var(--space-6);
-        max-width: 500px;
+        width: 100%;
     }
 }
 
@@ -175,6 +175,7 @@
 
     .social__grid {
         gap: var(--space-5);
+        
     }
 
     .social__card-title {
@@ -199,10 +200,12 @@
 
     .social__grid {
         gap: var(--space-6);
+        max-width: 800px;
     }
 
     .social__card {
         padding: var(--space-8);
+        
     }
 
     .social__icon {
